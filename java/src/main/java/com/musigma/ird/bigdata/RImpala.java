@@ -25,6 +25,8 @@ public class RImpala {
 
         
         public static boolean connect(String IP, String port, String db, String krbRealm, String krbHostFQDN, String krbServiceName){
+
+ 	    // TODO: Add a code change for the Kerberos credentials
       	
     	    CONNECTION_URL= "jdbc:impala://" + IP + ':' + port + "/" + db +
     			  ";AuthMech=1;KrbRealm=" + krbRealm + ";KrbHostFQDN=" + krbHostFQDN +

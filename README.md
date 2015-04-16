@@ -9,7 +9,7 @@ To use this package you must also have access to a Hadoop cluster running Cloude
 
 ###Install JDBC jars for RImpala
 
-* Download the [Impala Cloudera JDBC zip file](http://downloads.cloudera.com/connectors/impala_jdbc_2.5.16.1018.zip)to the client machine that you will use to connect to Impala servers.
+* Download the [Impala Cloudera JDBC zip file](http://downloads.cloudera.com/connectors/impala_jdbc_2.5.16.1018.zip) to the client machine that you will use to connect to Impala servers.
 
 *  The downloaded zip file contains 3 zip files. Choose the Cloudera_ImpalaJDBC4_2.5.16.1018.zip and extract the contents of the zip file to a location of your choosing and
 	For example:
@@ -22,7 +22,6 @@ To use this package you must also have access to a Hadoop cluster running Cloude
 2. Source code: <code>R CMD INSTALL ./RImpala</code>
 
 ###Loading RImpala and connecting to Impala
-
 1. Find the ip of the machine and the port where the Impala service is running.
 2. Find the location where you have unziped the JDBC jars in the above section.
 2. Launch R

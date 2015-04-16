@@ -16,12 +16,12 @@ To use this package you must also have access to a Hadoop cluster running Cloude
 	- On Linux, you might extract this to a location such as /opt/jars/.
 	- On Windows, you might extract this to a folder such as C:\Program Files\impala-jars.
 * We will use this location in <code>rimpala.init()</code>
-\
 
 ###Install RImpala
 1. Compressed package: <code>R CMD INSTALL RImpala-0.1.1.tar.gz</code>
 2. Source code: <code>R CMD INSTALL ./RImpala</code>
-##Loading RImpala and connecting to Impala
+
+###Loading RImpala and connecting to Impala
 
 1. Find the ip of the machine and the port where the Impala service is running.
 2. Find the location where you have unziped the JDBC jars in the above section.
@@ -34,7 +34,7 @@ To use this package you must also have access to a Hadoop cluster running Cloude
 	</code>
 	by default rimpala.init() searches "/usr/lib/impala" for the JDBC jars.
 	use the below line for kerberos authentication
-	rimpala.connect(IP="localhost",port="21050",principal="noSasl",db="default", krbRealm=NULL, krbHostFQDN=NULL,krbServiceName=NULL)
+	rimpala.connect(IP="localhost",port="21050",principal="noSasl",db="default",  krbRealm="",krbHostFQDN="",krbServiceName="")
 
 ###
 Here are links to more information on Cloudera Impala:

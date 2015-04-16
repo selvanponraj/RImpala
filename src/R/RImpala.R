@@ -17,7 +17,6 @@ rimpala.init <- function(impala_home=NULL, libs ="/usr/lib/impala/lib") {
   }
 }
 
-
 rimpala.query <-function (Q="show tables") {
   impalaObj = .jnew("com.musigma.ird.bigdata.RImpala")
   rs = impalaObj$query(Q)

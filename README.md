@@ -1,7 +1,5 @@
 #RImpala
 
-Pending work from Selvan Ponraj
-
 RImpala is an R package that helps you to connect and execute distributed queries using Cloudera Impala.
 Impala supports jdbc integration and this feature is used by RImpala to establish a connection between R and Impala. 
 
@@ -17,7 +15,16 @@ To use this package you must also have access to a Hadoop cluster running Cloude
 	- On Linux, you might extract this to a location such as /opt/jars/.
 	- On Windows, you might extract this to a folder such as C:\Program Files\impala-jars.
 * We will use this location in <code>rimpala.init()</code>
-	
+
+###Install Cloudera JDBC jars for RImpala to make connection with Kerberos enabled cluster
+
+* Download the [Impala Cloudera JDBC zip file](http://www.cloudera.com/content/cloudera/en/downloads/connectors/impala/jdbc/impala-jdbc-v2-5-16.html)to the client machine that you will use to connect to Impala servers.
+
+*  The downloaded zip file contains 3 zip files. Choose the Cloudera_ImpalaJDBC4_2.5.16.1018.zip and Extract the contents of the zip file to a location of your choosing and
+	For example:
+	- On Linux, you might extract this to a location such as /opt/jars/.
+	- On Windows, you might extract this to a folder such as C
+
 ###Install RImpala
 1. Compressed package: <code>R CMD INSTALL RImpala-0.1.1.tar.gz</code>
 2. Source code: <code>R CMD INSTALL ./RImpala</code>
@@ -49,5 +56,6 @@ Here are links to more information on Cloudera Impala:
 - R (>= 2.7.0)
 - rJava (>= 0.5-0)
 - Impala [JDBC driver jars](https://downloads.cloudera.com/impala-jdbc/impala-jdbc-0.5-2.zip)
+- Cloudera Impala [Cloudera JDBC driver jars](https://downloads.cloudera.com/impala-jdbc/impala-jdbc-0.5-2.zip) - only for Kerberos enabled cluster.
 
 

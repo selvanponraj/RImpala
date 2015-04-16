@@ -9,9 +9,9 @@ To use this package you must also have access to a Hadoop cluster running Cloude
 
 ###Install JDBC jars for RImpala
 
-* Download the [Impala Cloudera JDBC zip file](http://www.cloudera.com/content/cloudera/en/downloads/connectors/impala/jdbc/impala-jdbc-v2-5-16.html)to the client machine that you will use to connect to Impala servers.
+* Download the [Impala Cloudera JDBC zip file](http://downloads.cloudera.com/connectors/impala_jdbc_2.5.16.1018.zip)to the client machine that you will use to connect to Impala servers.
 
-*  The downloaded zip file contains 3 zip files. Choose the Cloudera_ImpalaJDBC4_2.5.16.1018.zip and Extract the contents of the zip file to a location of your choosing and
+*  The downloaded zip file contains 3 zip files. Choose the Cloudera_ImpalaJDBC4_2.5.16.1018.zip and extract the contents of the zip file to a location of your choosing and
 	For example:
 	- On Linux, you might extract this to a location such as /opt/jars/.
 	- On Windows, you might extract this to a folder such as C:\Program Files\impala-jars.
@@ -32,7 +32,6 @@ To use this package you must also have access to a Hadoop cluster running Cloude
 	rimpala.connect(IP="localhost",port="21050",principal="noSasl")
 	result = rimpala.query("your query");
 	</code>
-
 by default rimpala.init() searches "/usr/lib/impala" for the JDBC jars.
 
 use the below line for connection with kerberos security
@@ -45,7 +44,7 @@ Here are links to more information on Cloudera Impala:
 
 - [Cloudera Impala Documentation](http://www.cloudera.com/content/support/en/documentation/cloudera-impala/cloudera-impala-documentation-v1-latest.html)
 
-- [Cloudera Impala JDBC Documentation](http://www.cloudera.com/content/cloudera-content/cloudera-docs/Impala/latest/Installing-and-Using-Impala/ciiu_impala_jdbc.html)
+- [Cloudera Impala JDBC Documentation](http://www.cloudera.com/content/cloudera/en/documentation/connectors/latest/PDF/Cloudera-JDBC-Driver-for-Impala-Install-Guide.pdf)
 
 - [Impala-User Google Group](https://groups.google.com/a/cloudera.org/forum/?fromgroups#!forum/impala-user)
  
@@ -53,6 +52,6 @@ Here are links to more information on Cloudera Impala:
 - Java (>= 1.5)
 - R (>= 2.7.0)
 - rJava (>= 0.5-0)
-- Cloudera Impala (>= 2-5-16 JDBC 4 Version)[Cloudera JDBC driver jars](http://www.cloudera.com/content/cloudera/en/downloads/connectors/impala/jdbc/impala-jdbc-v2-5-16.html)
+- Cloudera Impala (>= 2-5-16 JDBC 4 Version)[Cloudera JDBC driver jars](http://downloads.cloudera.com/connectors/impala_jdbc_2.5.16.1018.zip)
 
 

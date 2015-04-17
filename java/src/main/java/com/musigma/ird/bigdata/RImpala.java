@@ -48,14 +48,14 @@ public class RImpala {
 			String principal, String db, String krbRealm, String krbHostFQDN,
 			String krbServiceName) {
 
-		if (krbRealm != null && krbHostFQDN != null && krbServiceName != null) {
+                if (krbRealm != null && krbHostFQDN != null && krbServiceName != null) {
 			CONNECTION_URL = "jdbc:impala://" + IP + ':' + port + "/" + db
 					+ ";AuthMech=1;KrbRealm=" + krbRealm + ";KrbHostFQDN="
 					+ krbHostFQDN + ";KrbServiceName=" + krbServiceName;
 		} else {
 			CONNECTION_URL = "jdbc:impala://" + IP + ':' + port + "/;" + principal;
 		}
-
+                
 		try {
 			Class.forName(JDBC_IMPALA_DRIVER_NAME);
 			con = DriverManager.getConnection(CONNECTION_URL);

@@ -34,8 +34,8 @@ To use this package you must also have access to a Hadoop cluster running Cloude
 by default rimpala.init() searches "/usr/lib/impala" for the JDBC jars.
 
 use the below line for connection with kerberos security
-rimpala.connect(IP="localhost",port="21050",principal="noSasl",db="default", krbRealm="",krbHostFQDN="",krbServiceName="")
-
+rimpala.connect(IP="127.0.0.1",port="21050",db="default",krbRealm="EXAMPLE.COM",
+                krbHostFQDN="impala.example.com",krbServiceName="impala")
 ###
 Here are links to more information on Cloudera Impala:
 
